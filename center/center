@@ -1,0 +1,11 @@
+child: Container(
+          width: 300,
+          height: 400,
+          child : Center(
+            child:Text(                    
+          'Hello, Flutter!',style: TextStyle(fontSize: 24,
+          color: Colors.blue, ),
+          ),
+        ),
+          color:Colors.orangeAccent,
+      ),
