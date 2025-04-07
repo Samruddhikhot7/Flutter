@@ -3,11 +3,15 @@
 //2.Elevated Button
 //3.Outline Button
 
-child : Column(
+Container(
+          width: 300,
+          height: 400,
+          color:Colors.orangeAccent,
+          child : Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
 
-              Text(                    
+              Text(                     // 13️⃣ Text - displays static text
             'Hello, Flutter!',style: TextStyle(fontSize: 24,
              color: Colors.blue , fontWeight: FontWeight.bold),),
 
@@ -20,6 +24,30 @@ child : Column(
                 },
                 child: Text("Button"),
 
-              )
+              ),
+              SizedBox(height:20),
+
+              ElevatedButton(onPressed: ()
+              {
+                print("Action is performed!!!!");
+              },
+                onLongPress: (){
+                  print("Longpressed!!!!!");
+                },
+                child: Text("Button"),
+
+              ),
+              SizedBox(height:20),
+              OutlinedButton(onPressed: ()
+              {
+                print("Outline");
+              },
+                onLongPress: (){
+                  print("Outline Button");
+                },
+                child: Text("Button"),
+              ),
           ]
         ),
+      ),
+
