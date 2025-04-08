@@ -1,0 +1,60 @@
+body: Center(
+        child :InkWell( onTap: (){
+          print("Container is tapped");
+        },
+          onDoubleTap: (){
+          print("Double tap");
+          },
+
+      
+            child: Container(
+              width: 900,
+              height: 400,
+              color:Colors.orangeAccent,
+              child : Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+
+                  Text(                    
+                'Hello, Flutter!',style: TextStyle(fontSize: 24,
+                 color: Colors.blue , fontWeight: FontWeight.bold),),
+
+                  TextButton(onPressed: ()
+                  {
+                    print("Action is performed");
+                  },
+                    onLongPress: (){
+                    print("Longpressed!");
+                    },
+                    child: Text("Button"),
+
+                  ),
+                  SizedBox(height:20),
+
+                  ElevatedButton(onPressed: ()
+                  {
+                    print("Action is performed!!!!");
+                  },
+                    onLongPress: (){
+                      print("Longpressed!!!!!");
+                    },
+                    child: Text("Button"),
+
+                  ),
+                  SizedBox(height:20),
+                  OutlinedButton(onPressed: ()
+                  {
+                    print("Outline");
+                  },
+                    onLongPress: (){
+                      print("Outline Button");
+                    },
+                    child: Text("Button"),
+                  ),
+              ]
+            ),
+          ),
+        ),
+
+      ),
