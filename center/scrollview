@@ -1,22 +1,24 @@
 child: Container(
-              width: 400,
-              height: 50,
+              width: 200,
+              height: 400,
               color:Colors.orangeAccent,
                 child:SingleChildScrollView(
-                  child : Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
+                  scrollDirection: Axis.horizontal,
+                    child : Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
 
-                        Text(                     // 13️⃣ Text - displays static text
-                          'Hello, Flutter!',style: TextStyle(fontSize: 24,
-                            color: Colors.blue , fontWeight: FontWeight.bold),),
+                        Text(                    
+                      'Hello, Flutter!',style: TextStyle(fontSize: 24,
+                       color: Colors.blue , fontWeight: FontWeight.bold),),
 
                         TextButton(onPressed: ()
                         {
                           print("Action is performed");
                         },
                           onLongPress: (){
-                            print("Longpressed!");
+                          print("Longpressed!");
                           },
                           child: Text("Button"),
 
@@ -43,8 +45,7 @@ child: Container(
                           },
                           child: Text("Button"),
                         ),
-                      ]
+                    ]
                   ),
-
-                ),
+                )
           ),
