@@ -1,0 +1,42 @@
+child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Padding(
+                    padding: EdgeInsets.all(50.0),
+                    child:  Text( 'Hello, Flutter!', style: TextStyle(fontSize: 24,
+                              color: Colors.blue, fontWeight: FontWeight.bold),),
+                  ),
+
+
+                  TextButton(onPressed: () {
+                    print("Action is performed");
+                  },
+                    onLongPress: () {
+                      print("Longpressed!");
+                    },
+                    child: Text("Button"),
+
+                  ),
+                  SizedBox(height: 20),
+
+                  ElevatedButton(onPressed: () {
+                    print("Action is performed!!!!");
+                  },
+                    onLongPress: () {
+                      print("Longpressed!!!!!");
+                    },
+                    child: Text("Button"),
+
+                  ),
+                  SizedBox(height: 20),
+                  OutlinedButton(onPressed: () {
+                    print("Outline");
+                  },
+                    onLongPress: () {
+                      print("Outline Button");
+                    },
+                    child: Text("Button"),
+                  ),
+                ]
+            ),
