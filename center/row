@@ -7,7 +7,7 @@ child: Container(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
 
-              Text(                     // 13️⃣ Text - displays static text
+              Text(                    
             'Hello, Flutter!',style: TextStyle(fontSize: 24,
              color: Colors.blue , fontWeight: FontWeight.bold),),
 
